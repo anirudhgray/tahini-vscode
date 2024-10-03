@@ -1,0 +1,10 @@
+{
+    "iconDefinitions": {
+        "tahini-file": {
+            "iconPath": "./icons/tahini-file-icon.png"
+        }
+    },
+    "fileExtensions": {
+        "tah": "tahini-file"
+    }
+}

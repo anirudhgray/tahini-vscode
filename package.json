@@ -10,16 +10,32 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "tahini",
-      "aliases": ["Tahini", "tahini"],
-      "extensions": [".tah"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "tahini",
-      "scopeName": "source.tahini",
-      "path": "./syntaxes/tahini.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "tahini",
+        "aliases": [
+          "Tahini",
+          "tahini"
+        ],
+        "extensions": [
+          ".tah"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "tahini",
+        "scopeName": "source.tahini",
+        "path": "./syntaxes/tahini.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "tahini",
+        "label": "Tahini",
+        "path": "./tahini-file-icons.json"
+      }
+    ]
   }
 }

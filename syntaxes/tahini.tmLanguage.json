@@ -3,30 +3,54 @@
 	"name": "Tahini",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.tahini",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
 			"name": "string.quoted.double.tahini",
 			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.tahini",
-					"match": "\\\\."
-				}
-			]
+			"end": "\""
+		},
+		{
+			"name": "comment.line.tahini",
+			"match": "//.*$"
+		},
+		{
+			"name": "keyword.control.flow.tahini",
+			"match": "\\b(if|else|for|while|break|continue)\\b"
+		},
+		{
+			"name": "keyword.storage.type.tahini",
+			"match": "\\b(class|fun|var)\\b"
+		},
+		{
+			"name": "keyword.control.condition.tahini",
+			"match": "\\b(and|or)\\b"
+		},
+		{
+			"name": "keyword.constant.boolean.tahini",
+			"match": "\\b(true|false|nil)\\b"
+		},
+		{
+			"name": "keyword.control.return.tahini",
+			"match": "\\b(return|super|this)\\b"
+		},
+		{
+			"name": "keyword.other.contract.tahini",
+			"match": "\\b(precondition|postcondition|assertion)\\b"
+		},
+		{
+			"name": "keyword.other.testblock.tahini",
+			"match": "\\b(test)\\b"
+		},
+		{
+			"name": "keyword.operator.ternary.tahini",
+			"match": "\\?|:|\\b(yolo|goBust)\\b"
+		},
+		{
+			"name": "keyword.operator.arithmetic.tahini",
+			"match": "(\\+=|-=|==|\\*=|/=|%=|[+\\-*/%])"
+		},
+		{
+			"name": "keyword.control.print.tahini",
+			"match": "\\b(print)\\b"
 		}
-	},
+	],
 	"scopeName": "source.tahini"
 }
