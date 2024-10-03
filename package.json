@@ -1,0 +1,25 @@
+{
+  "name": "tahini",
+  "displayName": "tahini",
+  "description": "Syntax highlighting for the Tahini programming language.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "tahini",
+      "aliases": ["Tahini", "tahini"],
+      "extensions": [".tah"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "tahini",
+      "scopeName": "source.tahini",
+      "path": "./syntaxes/tahini.tmLanguage.json"
+    }]
+  }
+}
