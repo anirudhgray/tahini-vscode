@@ -36,6 +36,12 @@
         "label": "Tahini",
         "path": "./tahini-file-icons.json"
       }
+    ],
+    "snippets": [
+      {
+        "language": "tahini",
+        "path": "./snippets/tahini.snippets.json"
+      }
     ]
   }
 }

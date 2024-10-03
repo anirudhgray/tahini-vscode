@@ -16,7 +16,7 @@
 			"match": "\\b(if|else|for|while|break|continue)\\b"
 		},
 		{
-			"name": "keyword.storage.type.tahini",
+			"name": "keyword.declaration.tahini",
 			"match": "\\b(class|fun|var)\\b"
 		},
 		{

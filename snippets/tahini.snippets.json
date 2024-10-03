@@ -1,0 +1,40 @@
+{
+  "Print Statement": {
+    "prefix": "print",
+    "body": [
+      "print ${1:message}"
+    ],
+    "description": "Prints a message to the console."
+  },
+  "Function Declaration": {
+    "prefix": "fun",
+    "body": [
+      "fun ${1:functionName}(${2:parameters}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Declares a function."
+  },
+  "Function Declaration With Contract": {
+    "prefix": "fun",
+    "body": [
+      "fun ${1:functionName}(${2:parameters})",
+      "precondition:${3:condition}",
+      "postcondition:${4:condition}",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description": "Declares a function with a contract."
+  },
+  "Test Block": {
+    "prefix": "test",
+    "body": [
+      "test \"${1:test name}\" {",
+      "assertion:${2:condition};",
+      "\t$0",
+      "}"
+    ],
+    "description": "Declares a test block."
+  }
+}
