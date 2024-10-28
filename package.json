@@ -1,8 +1,14 @@
 {
   "name": "tahini",
+  "publisher": "anirudhgray",
+  "icon": "./icons/tahini-file-icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anirudhgray/tahini-vscode.git"
+  },
   "displayName": "tahini",
   "description": "Syntax highlighting for the Tahini programming language.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.93.0"
   },
@@ -20,6 +26,10 @@
         "extensions": [
           ".tah"
         ],
+        "icon": {
+          "light": "./icons/tahini-file-icon.svg",
+          "dark": "./icons/tahini-file-icon.svg"
+        },
         "configuration": "./language-configuration.json"
       }
     ],
@@ -28,13 +38,6 @@
         "language": "tahini",
         "scopeName": "source.tahini",
         "path": "./syntaxes/tahini.tmLanguage.json"
-      }
-    ],
-    "iconThemes": [
-      {
-        "id": "tahini",
-        "label": "Tahini",
-        "path": "./tahini-file-icons.json"
       }
     ],
     "snippets": [

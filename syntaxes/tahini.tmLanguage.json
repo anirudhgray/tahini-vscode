@@ -50,6 +50,10 @@
 		{
 			"name": "keyword.control.print.tahini",
 			"match": "\\b(print)\\b"
+		},
+		{
+			"name": "keyword.control.import.tahini",
+			"match": "\\b(scoop|into)\\b"
 		}
 	],
 	"scopeName": "source.tahini"

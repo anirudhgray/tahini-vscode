@@ -36,5 +36,19 @@
       "}"
     ],
     "description": "Declares a test block."
+  },
+  "Scoop Import": {
+    "prefix": "scoop",
+    "body": [
+      "scoop \"${1:module}\";"
+    ],
+    "description": "Imports a module."
+  },
+  "Scoop Import With Alias": {
+    "prefix": "scoop into",
+    "body": [
+      "scoop \"${1:module}\" into ${2:alias};"
+    ],
+    "description": "Imports a file with an alias."
   }
 }
